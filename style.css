@@ -3,6 +3,12 @@
         font-family: sans-serif;
         color: white;
     }
+
+    h2 {
+        font-family: sans-serif;
+        color: white;
+    }
+    
     .content {
         background-color: rgb(173, 173, 173, 0,4);
         width: 600px;
@@ -78,6 +84,12 @@
         font-family: sans-serif;
         color: white;
     }
+
+    h2 {
+        font-family: sans-serif;
+        color: white;
+    }
+    
     .content {
         background-color: rgb(173, 173, 173, 0,4);
         width: 620px;
