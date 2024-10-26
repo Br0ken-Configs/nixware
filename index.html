@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Br0ken</title>
+</head>
+<body>
+    <div class="content">
+        <h1 class="br0ken">Br0ken | Configs</h1> 
+        <p>Get Good. Get Br0ken config for nixware!</p>
+        <div class="product-buy">
+            <select id="payment-method" class="payment-select">
+                <option value="">Payment Method</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="crypto">Crypto</option>
+            </select>
+            <button id="buy-button" class="buy-button" onclick="redirect()">Buy</button>
+        </div>
+        <p class="asd">When you will buy the config, create a ticket in our <a href="https://discord.gg/6zEsNx5D5g">discord server</a> (Only with PayPal and Crypto payment methods)</p>
+    </div>
+    <script>
+        function redirect() {
+            const paymentMethod = document.getElementById("payment-method").value;
+            let url;
+
+            switch (paymentMethod) {
+                case "credit-card":
+                    url = "https://credit-card-payment.com";
+                    break;
+                case "paypal":
+                    url = "https://paypal.com";
+                    break;
+                case "crypto":
+                    url = "https://discord.gg/6zEsNx5D5g";
+                    break;
+                default:
+                    alert("Please select a payment method.");
+                    return;
+            }
+
+            // Redirect to the selected payment method URL
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
