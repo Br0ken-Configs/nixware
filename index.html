@@ -18,7 +18,7 @@
             </select>
             <button id="buy-button" class="buy-button" onclick="redirect()">Buy</button>
         </div>
-        <p class="asd">When you will buy the config, create a ticket in our <a href="https://discord.gg/6zEsNx5D5g">discord server</a> (Only with PayPal and Crypto payment methods)</p>
+        <p class="asd">When you will buy the config, create a ticket in our <a href="https://discord.gg/6zEsNx5D5g">discord server</a> (Only with 'Crypto' payment method)</p>
     </div>
     <script>
         function redirect() {
@@ -27,10 +27,10 @@
 
             switch (paymentMethod) {
                 case "credit-card":
-                    url = "https://credit-card-payment.com";
+                    url = "https://buy.stripe.com/bIY9Dc0M275W0Fi6op";
                     break;
                 case "paypal":
-                    url = "https://paypal.com";
+                    url = "https://buy.stripe.com/bIY9Dc0M275W0Fi6op";
                     break;
                 case "crypto":
                     url = "https://discord.gg/6zEsNx5D5g";
